@@ -39,11 +39,12 @@ pub fn instantiate(
             _env.block.time.seconds() + 18 * 30 * 24 * 60 * 60, // 18 months
             _env.block.time.seconds() + 24 * 30 * 24 * 60 * 60, // 24 months
         ],
+        // ToDo: Recipients list should be passed in as a Vec<Addr> or Vec<String> and parsed into recipients below
         recipients: [
-            "recipient1".to_string(),
-            "recipient2".to_string(),
-            "recipient3".to_string(),
-            "recipient4".to_string(),
+            "sei111111111111111111111111111111111111111".to_string(),
+            "sei111111111111111111111111111111111111111".to_string(),
+            "sei111111111111111111111111111111111111111".to_string(),
+            "sei111111111111111111111111111111111111111".to_string(),
         ],
         allocation: [
             Uint128::zero(),
